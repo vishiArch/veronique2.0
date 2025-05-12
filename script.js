@@ -7,6 +7,9 @@ function openMenu() {
         scale: 1,
         duration: 0.5,
         ease: "power2.out",
+        onStart: () => {
+            document.body.style.overflow = "hidden";
+        }
     });
 }
 
@@ -18,6 +21,7 @@ function closeMenu() {
         ease: "power2.in",
         onComplete: () => {
             gsap.set(".menu", { display: "none" });
-        }
+            document.body.style.overflow = "auto";
+        },
     });
 }
