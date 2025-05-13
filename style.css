@@ -3,12 +3,32 @@
         font-size: 50px;
         line-height: 50px;
     }
-    .pageTwo{
+
+    .pageTwo {
         height: 50vh;
     }
-    .pageTwo .child h1{
+
+    .pageTwo .child h1 {
         font-size: 36px;
         line-height: 36px;
         white-space: nowrap;
     }
+
+    .line3 {
+        width: 50vw;
+    }
+
+    .pageThree .navtwo h1 {
+        font-size: 53px;
+    }
+
+    .proj {
+        flex-direction: column;
+    }
+}
+.cursor{
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    display: none;
+    filter: blur(20px);
 }
