@@ -17,15 +17,19 @@
     .line3 {
         width: 50vw;
     }
+
     .pageThree .navtwo h1 {
         font-size: 53px;
     }
-    .project{
+
+    .project {
         overflow-x: scroll;
     }
+
     .contact {
         flex-direction: column;
     }
+
     .containerOne {
         height: 100%;
         width: 100%;
@@ -42,36 +46,36 @@
     }
 
     .containerTwo {
-       display: none;
+        display: none;
+    }
+}
+    .cursor {
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        display: none;
+        filter: blur(20px);
     }
 
-.cursor {
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    display: none;
-    filter: blur(20px);
-}
+    input {
+        border: 1px solid black;
+        padding-left: 20px;
+        background: rgba(0, 0, 0, 0.053);
+        backdrop-filter: blur(30px);
+        outline: none;
+    }
 
-input {
-    border: 1px solid black;
-    padding-left: 20px;
-    background: rgba(0, 0, 0, 0.053);
-    backdrop-filter: blur(30px);
-    outline: none;
-}
+    .containerOne {
+        border: 1px solid black;
+    }
 
-.containerOne {
-    border: 1px solid black;
-}
+    .containerTwo {
+        border-top: 1px solid black;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+    }
 
-.containerTwo {
-    border-top: 1px solid black;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
-}
-
-.bigButton {
-    border: 1px solid black;
-    background: rgba(0, 0, 0, 0.053);
-    backdrop-filter: blur(30px);
-}
+    .bigButton {
+        border: 1px solid black;
+        background: rgba(0, 0, 0, 0.053);
+        backdrop-filter: blur(30px);
+    }
