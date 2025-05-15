@@ -48,6 +48,8 @@
     .containerTwo {
         display: none;
     }
+    .main2 h1{
+        font-size: 80px;
 }
     .cursor {
         transform: translate(-50%, -50%);
