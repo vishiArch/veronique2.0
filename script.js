@@ -21,7 +21,7 @@ function closeMenu() {
         ease: "power2.in",
         onComplete: () => {
             gsap.set(".menu", { display: "none" });
-            document.body.style.overflow = "auto";
+            document.body.style.overflow = "hidden";
         },
     });
 }
