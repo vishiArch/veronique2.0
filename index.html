@@ -13,6 +13,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Shery.css" />
+    <!-- Lenis Smooth Scroll CSS/JS -->
     <style>
         .font-bebas-neue {
             font-family: 'Bebas Neue', cursive;
@@ -29,10 +31,10 @@
             font-family: 'Instrument Sans', sans-serif;
         }
     </style>
-    <title>Document</title>
+    <title>Veronique Design Agency | From India</title>
 </head>
 
-<body class="bg-[#D5D5D5]"></body>
+<body class="bg-[#d5d5d5]"></body>
 <!-- Menu code -->
 <div class="menu h-[100vh] w-full">
     <div class="nav2 h-[8vh] w-full flex items-center justify-between px-[16px]">
@@ -54,21 +56,20 @@
         <p class="font-instrument-sans">veronique</p>
         <i class="fas fa-bars text-black text-2xl cursor-pointer" onclick="openMenu();"></i>
     </div>
-    <div class="main h-[92vh] w-full flex flex-col items-center justify-center gap-[15px] ">
-        <h1 class="font-bebas-neue text-[80px] text-center leading-[70px]">Designing Brands.<br> Defining Visual
-            Identity.</h1>
-        <button
-            class="font-bebas-neue h-[40px] w-[144px] rounded-full border cursor-pointer relative overflow-hidden bg-[#000000] text-ghostwhite group">
-            <span class="relative z-10 transition-colors duration-400 group-hover:text-white">
-                Explore
-            </span>
-            <span
-                class="absolute inset-0 -left-[10%] w-[120%] h-full bg-[#66ff66] transform skew-x-[30deg] transition-transform duration-400 ease-[cubic-bezier(0.3,1,0.8,1)] group-hover:translate-x-full z-0"></span>
-        </button>
-
-        <img src="assets_task_01jtzc6kf2fsktgm5zvxdkcwjc_1746957267_img_2.webp"
-            class="h-[67vh] relative left-[10px] object-cover">
-    </div>
+   <div class="main h-full flex flex-col items-center justify-center gap-[15px]">
+            <h1 class="font-bebas-neue text-[80px] text-center leading-[70px]">Designing Brands.<br> Defining Visual
+                Identity.</h1>
+            <button
+                class="custom-btn font-bebas-neue h-[45px] w-[144px] rounded-full border cursor-pointer relative overflow-hidden bg-[#000000] text-ghostwhite group">
+                <span class="relative z-10 transition-colors duration-400 group-hover:text-white">
+                    Explore
+                </span>
+                <span
+                    class="absolute inset-0 -left-[10%] w-[120%] h-full bg-[#66ff66] transform skew-x-[30deg] transition-transform duration-400 ease-[cubic-bezier(0.3,1,0.8,1)] group-hover:translate-x-full z-0"></span>
+            </button>
+            <img src="assets_task_01jtzc6kf2fsktgm5zvxdkcwjc_1746957267_img_2.webp"
+                class="h-[67vh] relative left-[10px] object-cover">
+        </div>
 </div>
 <!-- pageTwo code -->
 <div class="pageTwo h-screen w-full flex flex-col items-center justify-center text-center gap-[30px]">
@@ -152,6 +153,7 @@
         </div>
     </div>
 </div>
+<!-- pageFour code -->
 <div class="pageFour h-screen w-full flex items-center justify-center">
     <div class="contact h-[95%] w-[95%] flex">
         <div class="containerOne h-full w-[50%] flex flex-col gap-[30px] justify-center px-[30px] bg-[#C573E0]">
@@ -184,6 +186,64 @@
         </div>
     </div>
 </div>
+<!-- footer code -->
+<footer class="relative bg-black text-white px-6 py-14 overflow-hidden">
+  <!-- Decorative Illustration (can be SVG or PNG) -->
+  <div class="absolute inset-0 opacity-10 pointer-events-none">
+    <img src="https://www.transparenttextures.com/patterns/asfalt-dark.png" alt="footer texture" class="w-full h-full object-cover">
+  </div>
+
+  <div class="relative max-w-7xl mx-auto flex flex-col md:flex-row items-start justify-between gap-10">
+    
+    <!-- Branding & Message -->
+    <div class="max-w-sm">
+      <h2 class="font-bebas-neue text-4xl mb-2">Veronique</h2>
+      <p class="text-gray-400 text-sm">
+        We don’t just design brands — we craft identities that tell stories, evoke emotions, and leave lasting impressions.
+      </p>
+      <p class="mt-4 text-xs text-gray-500">
+        © 2025 Veronique Creative Studio. <br>
+        Crafted with 💚 from imagination to interaction. All rights reserved.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="flex flex-col gap-3">
+      <h3 class="font-semibold text-lg">Explore</h3>
+      <a href="#" class="text-gray-400 hover:text-white transition duration-300">Our Work</a>
+      <a href="#" class="text-gray-400 hover:text-white transition duration-300">Services</a>
+      <a href="#" class="text-gray-400 hover:text-white transition duration-300">About Us</a>
+      <a href="#" class="text-gray-400 hover:text-white transition duration-300">Careers</a>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="flex flex-col gap-3">
+      <h3 class="font-semibold text-lg">Contact</h3>
+      <p class="text-gray-400 text-sm">Email: hello@veronique.studio</p>
+      <p class="text-gray-400 text-sm">Phone: +1 (800) 123-4567</p>
+      <p class="text-gray-400 text-sm">Location: Remote-first, Globally Creative</p>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="flex flex-col gap-3">
+      <h3 class="font-semibold text-lg">Follow Us</h3>
+      <div class="flex gap-5 mt-1">
+        <a href="#" class="text-white text-2xl hover:text-[#66FF66] transition-transform duration-300 hover:scale-125">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="text-white text-2xl hover:text-[#66FF66] transition-transform duration-300 hover:scale-125">
+          <i class="fab fa-behance"></i>
+        </a>
+        <a href="#" class="text-white text-2xl hover:text-[#66FF66] transition-transform duration-300 hover:scale-125">
+          <i class="fab fa-dribbble"></i>
+        </a>
+        <a href="#" class="text-white text-2xl hover:text-[#66FF66] transition-transform duration-300 hover:scale-125">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
 <script src="script.js"></script>
 </body>
 

@@ -1,3 +1,4 @@
+
 gsap.set(".menu", {
     display: "none",
 })
@@ -7,9 +8,6 @@ function openMenu() {
         scale: 1,
         duration: 0.5,
         ease: "power2.out",
-        onStart: () => {
-            document.body.style.overflow = "hidden";
-        }
     });
 }
 
@@ -19,10 +17,6 @@ function closeMenu() {
         scale: 0.9,
         duration: 0.2,
         ease: "power2.in",
-        onComplete: () => {
-            gsap.set(".menu", { display: "none" });
-            document.body.style.overflow = "hidden";
-        },
     });
 }
 
@@ -56,21 +50,28 @@ const follower = document.querySelector(".cursor");
 const targetDiv = document.querySelector(".project"); // Add this class to your target div
 
 
-    targetDiv.addEventListener("mouseenter", () => {
-        follower.style.transform = "translate(-50%, -50%) scale(1)";
-        follower.style.display = "block";
-        follower.style.duration = "0.3s";   
+targetDiv.addEventListener("mouseenter", () => {
+    follower.style.transform = "translate(-50%, -50%) scale(1)";
+    follower.style.display = "block";
+    follower.style.duration = "0.3s";
+});
+targetDiv.addEventListener("mouseleave", () => {
+    follower.style.transform = "translate(-50%, -50%) scale(0)";
+    follower.style.display = "none";
+    follower.style.duration = "0.3s";
+});
+targetDiv.addEventListener("mousemove", (e) => {
+    gsap.to(follower, {
+        left: e.pageX,
+        top: e.pageY,
+        duration: 0.2,
+        ease: "power2.out"
     });
-    targetDiv.addEventListener("mouseleave", () => {
-        follower.style.transform = "translate(-50%, -50%) scale(0)";
-        follower.style.display = "none";
-        follower.style.duration = "0.3s";
-    });
-    targetDiv.addEventListener("mousemove", (e) => {
-        gsap.to(follower, {
-            left: e.pageX,
-            top: e.pageY,
-            duration: 0.2,
-            ease: "power2.out"
-        });
-    });
+});
+
+Shery.mouseFollower({
+  //Parameters are optional.
+  skew: true,
+  ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+  duration: 1,
+});
