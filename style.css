@@ -1,3 +1,15 @@
+/* Hide scrollbar for all elements */
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
 @media (max-width: 500px) {
     .main h1 {
         font-size: 50px;
@@ -58,7 +70,15 @@
     transform: translate(-50%, -50%);
     pointer-events: none;
     display: none;
-    filter: blur(20px);
+    filter: blur(50px);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.bigimg {
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 input {
@@ -84,9 +104,17 @@ input {
     background: rgba(0, 0, 0, 0.053);
     backdrop-filter: blur(30px);
 }
+
 @media (min-width: 400px) {
-    .pageOne button{
+    .pageOne button {
         height: 40px;
         width: 144px;
-    }    
+    }
+}
+
+@media (max-width: 500px) {
+    .pageThree .sameIMG {
+        opacity: 1 !important;
+        pointer-events: auto;
+    }
 }

@@ -1,3 +1,12 @@
+// Initialize Lenis
+const lenis = new Lenis({
+    autoRaf: true,
+});
+
+// Listen for the scroll event and log the event data
+lenis.on('scroll', (e) => {
+    console.log(e);
+});
 gsap.set(".menu", {
     display: "none",
 })
@@ -67,3 +76,34 @@ targetDiv.addEventListener("mousemove", (e) => {
         ease: "power2.out"
     });
 });
+function animate() {
+    Shery.imageMasker(".sameIMG" /* Element to target.*/, {
+        //Parameters are optional.
+        mouseFollower: true,
+        text: "Get Your Design",
+        ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+        duration: 1,
+    });
+    Shery.makeMagnet(".fa-bars" /* Element to target.*/, {
+        //Parameters are optional.
+        ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+        duration: 1,
+    });
+
+    Shery.makeMagnet(".fa-times" /* Element to target.*/, {
+        //Parameters are optional.
+        ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+        duration: 1,
+    });
+
+    Shery.hoverWithMediaCircle(".pageTwo .child h1" /* Element to target.*/, {
+        images: ["https://images.pexels.com/photos/1081685/pexels-photo-1081685.jpeg?auto=compress&cs=tinysrgb&w=600"]
+    });
+    Shery.makeMagnet(".pageOne button" /* Element to target.*/, {
+        //Parameters are optional.
+        ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+        duration: 1,
+    });
+}
+animate();
+
